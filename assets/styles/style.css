@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+canvas {
+  position: absolute;
+  bottom: 25vh;
+  left: 0px;
+  right: 0px;
+  height: 50vh;
+  width: 100%;
+  z-index: -1;
+}
+section button {
+  background-color: transparent;
+}
+section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
